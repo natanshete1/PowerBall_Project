@@ -1,6 +1,6 @@
-from PowerBall import powerball
+from new_powerball import Powerball
 
-class Money(powerball):
+class Money(Powerball):
     def __init__(self):
         super().__init__()
         self.white = self.white_balls()

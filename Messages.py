@@ -1,4 +1,5 @@
 from Money import Money
+
 class Massage(Money):
     def __init__(self):
      super().__init__()
@@ -25,8 +26,8 @@ class Massage(Money):
             return("try again!")
 
     def __str__(self):
-        self.player_and_lttorey =" today's Porweball winning Numbers:" + "\n"+str(self.white) +str(self.strong)+" \n"+"player number"+ "\n"+str(self.player) +str(self.player_num )
-        self.powreball_lttorey = "your lucky numbers: "+str(self.match_nums())+" "+str(self.match_strong())
+        self.player_and_lttorey ="today's Porweball winning Numbers:" + "\n"+str(self.white) +str(self.strong)+" \n"+"your lucky numbers: "+ "\n"+str(self.player) +str(self.player_num )
+        self.powreball_lttorey ="You caught :Porweball numbers = "+str(self.match_nums())+" :and strong numbers = "+str(self.match_strong())
 
         return self.player_and_lttorey+"    \n  "+self.powreball_lttorey+"\n"+str(self.reslut())
 print(Massage())

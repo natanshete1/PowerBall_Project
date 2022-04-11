@@ -1,35 +1,29 @@
 import random
 
-#this is 4 empty list
 class powerball:
+
     def __init__(self):
         self.guessed_numbers = []
         self.strong_number = []
-        self.lukey_number = []
-        self.lukey_storngnumber = []
-#this is five white balls
+        self.lucky_number = []
+        self.luky_storngnumber = []
+    print("today's powerball winning numbers:")
+
     def white_balls(self):
-        while len(self.guessed_numbers) < 5:
+        for x in range(5):
             number = random.randint(1, 20)
-            if number not in self.guessed_numbers:
-                self.guessed_numbers.append(number)
-        return sorted(self.guessed_numbers)
-#this is power ball
+            self.strong_number.append(number)
+        print(self.strong_number)
+
     def strong_ball(self):
-        number1 = random.randint(1, 10)
-        self.strong_number.append(number1)
-        return self.strong_number
-#this is player lukey number
-    def plyer_numbers(self):
-        while len(self.lukey_number) < 5:
-            number = random.randint(1, 20)
-            if number not in self.lukey_number:
-                self.lukey_number.append(number)
-        return sorted(self.lukey_number)
-#this is player strong number
-    def plyer_strongnumber(self):
-        number1 = random.randint(1, 10)
-        self.lukey_storngnumber.append(number1)
-        return self.lukey_storngnumber
+        print("your lucky numbers:")
+        for x in range(5):
+            number = random.randint(1, 10)
+            self.guessed_numbers.append(number)
+        print(self.guessed_numbers)
+        print("try again")
 
-
+pb = powerball()
+pb.guessed_numbers = []
+pb.white_balls()
+pb.strong_ball()
