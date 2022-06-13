@@ -21,3 +21,9 @@ class Money(powerball):
             return 1
         else:
             return 0
+
+    def plyer_numbers(self):
+        pass
+
+    def plyer_strongnumber(self):
+        pass
