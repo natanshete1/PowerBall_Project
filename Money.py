@@ -1,6 +1,7 @@
-from new_powerball import Powerball
+from PowerBall import powerball
 
-class Money(Powerball):
+
+class Money(powerball):
     def __init__(self):
         super().__init__()
         self.white = self.white_balls()
@@ -12,13 +13,11 @@ class Money(Powerball):
         cuont = 0
         for i in self.white:
             if i in self.player:
-                cuont +=1
+                cuont += 1
         return cuont
 
     def match_strong(self):
-        if self.strong== self.player_num :
+        if self.strong == self.player_num:
             return 1
         else:
             return 0
-
-
